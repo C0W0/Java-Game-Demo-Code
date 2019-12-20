@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="" />
+    <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/GameCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Launcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/worlds/world1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +93,7 @@
       <workItem from="1575481727569" duration="7800000" />
       <workItem from="1576718043314" duration="3012000" />
       <workItem from="1576789584771" duration="13049000" />
+      <workItem from="1576878770769" duration="1447000" />
     </task>
     <servers />
   </component>

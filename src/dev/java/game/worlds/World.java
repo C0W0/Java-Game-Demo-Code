@@ -1,5 +1,6 @@
 package dev.java.game.worlds;
 
+import dev.java.game.Game;
 import dev.java.game.tiles.Tile;
 import dev.java.game.utils.Utils;
 
@@ -7,12 +8,14 @@ import java.awt.Graphics;
 
 public class World {
 
+    private Game game;
     private int width, height;
     private int spawnX, spawnY;
     private int [][] worldTiles;//a 2d array which associates the type of tiles to the location (x,y)
 
-    public World(String path){
+    public World(Game game, String path){
         loadWorld(path);
+        this.game = game;
     }
 
     private void loadWorld(String path){
