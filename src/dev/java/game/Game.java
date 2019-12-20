@@ -2,6 +2,7 @@ package dev.java.game;
 
 import dev.java.game.display.Display;
 import dev.java.game.gfx.Assets;
+import dev.java.game.display.GameCamera;
 import dev.java.game.input.KeyManager;
 import dev.java.game.states.GameState;
 import dev.java.game.states.MenuState;
@@ -9,7 +10,6 @@ import dev.java.game.states.SettingsState;
 import dev.java.game.states.State;
 
 import java.awt.Graphics;
-import java.awt.event.KeyListener;
 import java.awt.image.BufferStrategy;
 
 public class Game implements Runnable{
@@ -23,15 +23,16 @@ public class Game implements Runnable{
 
     //input
     private KeyManager keyManager;
-    //^^^^^
+
+    //camera
+    private GameCamera gameCamera;
 
     //states
     private State gameState;
     private State menuState;
     private State settingsState;
-    //^^^^^
-    public int width;
-    public int height;
+
+    private int width, height;
     public String title;
 
 
@@ -50,6 +51,8 @@ public class Game implements Runnable{
         display.getFrame().addKeyListener(keyManager);
         timer = new FPSTimer(60);
         Assets.init();
+
+        gameCamera = new GameCamera(this,0,0);
 
         gameState = new GameState(this);
         menuState = new MenuState(this);
@@ -100,9 +103,6 @@ public class Game implements Runnable{
         stop();
     }
 
-    public KeyManager getKeyManager(){
-        return keyManager;
-    }
 
     public synchronized void start(){
         if(running){
@@ -127,5 +127,20 @@ public class Game implements Runnable{
         }
     }
 
+    //getters and setters
+    public KeyManager getKeyManager(){
+        return keyManager;
+    }
 
+    public GameCamera getGameCamera() {
+        return gameCamera;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 }

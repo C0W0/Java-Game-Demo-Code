@@ -16,6 +16,7 @@ public class GameState extends State {
         super(game);
         world = new World(game,"res/worlds/world1.wld");
         player = new Player(game,world.getSpawnX()*Tile.TILEWIDTH,world.getSpawnY()*Tile.TILEHEIGHT);
+
     }
 
     @Override
