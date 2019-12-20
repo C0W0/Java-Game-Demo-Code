@@ -1,18 +1,19 @@
 package dev.java.game.entities;
 
 import dev.java.game.Game;
+import dev.java.game.Handler;
 
-import java.awt.*;
+import java.awt.Graphics;
 
 public abstract class Entity {
 
     //Entities
     protected float x,y;
-    protected Game game;
+    protected Handler handler;
     protected int width, height; // the size of the entity
 
-    public Entity (Game game, float x, float y, int width, int height){
-        this.game = game;
+    public Entity (Handler handler, float x, float y, int width, int height){
+        this.handler = handler;
         this.x = x;
         this.y = y;
         this.width = width;

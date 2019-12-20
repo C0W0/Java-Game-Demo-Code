@@ -1,13 +1,12 @@
 package dev.java.game.states;
 
-import dev.java.game.Game;
-
+import dev.java.game.Handler;
 import java.awt.Graphics;
 
 public class MenuState extends State {
 
-    public MenuState(Game game){
-        super(game);
+    public MenuState(Handler handler){
+        super(handler);
     }
 
     @Override

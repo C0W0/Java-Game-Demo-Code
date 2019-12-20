@@ -1,7 +1,7 @@
 package dev.java.game.states;
 
 import dev.java.game.entities.creatures.Player;
-import dev.java.game.Game;
+import dev.java.game.Handler;
 import dev.java.game.tiles.Tile;
 import dev.java.game.worlds.World;
 
@@ -12,10 +12,11 @@ public class GameState extends State {
     private Player player;
     private World world;
 
-    public GameState(Game game){
-        super(game);
-        world = new World(game,"res/worlds/world1.wld");
-        player = new Player(game,world.getSpawnX()*Tile.TILEWIDTH,world.getSpawnY()*Tile.TILEHEIGHT);
+    public GameState(Handler handler){
+        super(handler);
+        world = new World(handler,"res/worlds/world1.wld");
+        handler.setWorld(world);
+        player = new Player(handler,world.getSpawnX()*Tile.TILEWIDTH,world.getSpawnY()*Tile.TILEHEIGHT);
 
     }
 

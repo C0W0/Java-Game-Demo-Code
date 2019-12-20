@@ -1,6 +1,6 @@
 package dev.java.game.entities.creatures;
 
-import dev.java.game.Game;
+import dev.java.game.Handler;
 import dev.java.game.entities.Entity;
 
 public abstract class Creature extends Entity {
@@ -18,8 +18,8 @@ public abstract class Creature extends Entity {
 
     protected float xMove, yMove; // movement
 
-    public Creature(Game game, float x, float y, int width, int height) {
-        super(game, x, y, width, height);
+    public Creature(Handler handler, float x, float y, int width, int height) {
+        super(handler, x, y, width, height);
         health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
         xMove = 0;
