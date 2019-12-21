@@ -1,6 +1,5 @@
 package dev.java.game.entities;
 
-import dev.java.game.Game;
 import dev.java.game.Handler;
 
 import java.awt.Graphics;
