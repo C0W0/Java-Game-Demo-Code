@@ -4,13 +4,16 @@ import dev.java.game.Game;
 import dev.java.game.Handler;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
+
 
 public abstract class Entity {
 
     //Entities
     protected float x,y;
     protected Handler handler;
-    protected int width, height; // the size of the entity
+    protected int width, height; //the size of the entity
+    protected Rectangle bounds; //collision detection
 
     public Entity (Handler handler, float x, float y, int width, int height){
         this.handler = handler;
@@ -18,6 +21,8 @@ public abstract class Entity {
         this.y = y;
         this.width = width;
         this.height = height;
+
+        bounds = new Rectangle(0, 0, width, height);//default
     }
 
     public abstract void update();

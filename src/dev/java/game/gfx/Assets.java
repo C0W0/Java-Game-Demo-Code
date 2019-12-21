@@ -5,8 +5,8 @@ import java.awt.image.BufferedImage;
 public class Assets {
 
 
-    private static final int width = 63;
-    private static final int height = 63;
+    private static final int width = 64;
+    private static final int height = 64;
 
     public static BufferedImage playerA,playerB,grass,grassStone,tree,dirt,dirtStone;
 

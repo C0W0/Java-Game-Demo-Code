@@ -2,6 +2,7 @@ package dev.java.game.entities.creatures;
 
 import dev.java.game.Handler;
 import dev.java.game.entities.Entity;
+import dev.java.game.tiles.Tile;
 
 public abstract class Creature extends Entity {
 
@@ -28,8 +29,63 @@ public abstract class Creature extends Entity {
 
     //methods
     public void move(){
-        x += xMove;
-        y += yMove;
+        moveX();
+        moveY();
+    }
+
+    //collision detection
+    public void moveX(){
+        if(xMove > 0){//right
+
+            int tx = (int) (x + xMove + bounds.x + bounds.width) / Tile.TILEWIDTH;
+
+            if(!collisionWithTile(tx,(int)(y+bounds.y) / Tile.TILEHEIGHT) &&
+            !collisionWithTile(tx,(int)(y+bounds.y+bounds.height) / Tile.TILEHEIGHT)){
+                x += xMove;
+            } else{
+                x = tx*Tile.TILEWIDTH - bounds.x - bounds.width - 1;
+            }
+
+        } else if(xMove < 0){//left
+
+            int tx = (int) (x + xMove + bounds.x) / Tile.TILEWIDTH;
+
+            if(!collisionWithTile(tx,(int)(y+bounds.y) / Tile.TILEHEIGHT) &&
+                    !collisionWithTile(tx,(int)(y+bounds.y+bounds.height) / Tile.TILEHEIGHT)){
+                x += xMove;
+            } else{
+                x = tx*Tile.TILEWIDTH + Tile.TILEWIDTH - bounds.x;
+            }
+        }
+    }
+
+    public void moveY(){
+        if(yMove > 0){//down
+
+            int ty = (int) (y + yMove + bounds.y + bounds.height) / Tile.TILEHEIGHT;
+
+            if(!collisionWithTile((int)(x+bounds.x) / Tile.TILEHEIGHT,ty) &&
+                    !collisionWithTile((int)(x+bounds.x+bounds.width) / Tile.TILEHEIGHT,ty)){
+                y += yMove;
+            } else{
+               y = ty*Tile.TILEHEIGHT - bounds.y - bounds.height - 1;
+            }
+
+        } else if(yMove < 0){//up
+
+            int ty = (int) (y + yMove + bounds.y) / Tile.TILEWIDTH;
+
+            if(!collisionWithTile((int)(x+bounds.x) / Tile.TILEHEIGHT,ty) &&
+                    !collisionWithTile((int)(x+bounds.x+bounds.width) / Tile.TILEHEIGHT,ty)){
+                y += yMove;
+            } else{
+                y = ty*Tile.TILEHEIGHT + Tile.TILEHEIGHT - bounds.y;
+            }
+        }
+    }
+
+    protected boolean collisionWithTile(int x, int y){
+        return handler.getWorld().getTile(x,y).isBarrier();
     }
 
     //getters and setters
