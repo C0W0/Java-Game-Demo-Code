@@ -1,27 +1,44 @@
 package dev.java.game.display;
 
-import dev.java.game.Game;
+import dev.java.game.Handler;
 import dev.java.game.entities.Entity;
+import dev.java.game.tiles.Tile;
 
 public class GameCamera {
 
     private float xOffset, yOffset;
-    private Game game;
+    private Handler handler;
 
-    public GameCamera(Game game, float xOffset, float yOffset){
-        this.game = game;
+    public GameCamera(Handler handler, float xOffset, float yOffset){
+        this.handler = handler;
         this.xOffset = xOffset;
         this.yOffset = yOffset;
     }
 
+    public void hideBlankSpace(){
+
+        if(xOffset < 0){
+            xOffset = 0;
+        } else if(xOffset > handler.getWorld().getWidth() * Tile.TILEWIDTH - handler.getWidth()){
+            xOffset = handler.getWorld().getWidth() * Tile.TILEWIDTH - handler.getWidth();
+        }
+        if(yOffset < 0){
+            yOffset = 0;
+        } else if(yOffset > handler.getWorld().getHeight() * Tile.TILEHEIGHT - handler.getHeight()){
+            yOffset = handler.getWorld().getHeight() * Tile.TILEHEIGHT - handler.getHeight();
+        }
+    }
+
     public void centerOnEntity(Entity e){
-        xOffset = e.getX() - (float)game.getWidth()/2 + (float)e.getWidth() /2;
-        yOffset = e.getY() - (float)game.getHeight()/2 + (float)e.getHeight() /2;
+        xOffset = e.getX() - (float)handler.getWidth()/2 + (float)e.getWidth() /2;
+        yOffset = e.getY() - (float)handler.getHeight()/2 + (float)e.getHeight() /2;
+        hideBlankSpace();
     }
 
     public void move(float xAmt, float yAmt){
         xOffset += xAmt;
         yOffset += yAmt;
+        hideBlankSpace();
     }
 
     //getters and setters
