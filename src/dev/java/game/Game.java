@@ -4,6 +4,7 @@ import dev.java.game.display.Display;
 import dev.java.game.gfx.Assets;
 import dev.java.game.display.GameCamera;
 import dev.java.game.input.KeyManager;
+import dev.java.game.input.MouseManager;
 import dev.java.game.states.GameState;
 import dev.java.game.states.MenuState;
 import dev.java.game.states.SettingsState;
@@ -23,6 +24,7 @@ public class Game implements Runnable{
 
     //input
     private KeyManager keyManager;
+    private MouseManager mouseManager;
 
     //camera
     private GameCamera gameCamera;
@@ -31,9 +33,9 @@ public class Game implements Runnable{
     private Handler handler;
 
     //states
-    private State gameState;
-    private State menuState;
-    private State settingsState;
+    public State gameState;
+    public State menuState;
+    public State settingsState;
 
     private int width, height;
     public String title;
@@ -47,11 +49,16 @@ public class Game implements Runnable{
         this.height = height;
         this.title = title;
         keyManager = new KeyManager();
+        mouseManager = new MouseManager();
     }
 
     private void init(){
         display = new Display(title,width,height);
         display.getFrame().addKeyListener(keyManager);
+        display.getFrame().addMouseListener(mouseManager);
+        display.getFrame().addMouseMotionListener(mouseManager);
+        display.getCanvas().addMouseListener(mouseManager);
+        display.getCanvas().addMouseMotionListener(mouseManager);
         timer = new FPSTimer(60);
         Assets.init();
 
@@ -61,7 +68,8 @@ public class Game implements Runnable{
         gameState = new GameState(handler);
         menuState = new MenuState(handler);
         settingsState = new SettingsState(handler);
-        State.setState(gameState);
+        State.setState(menuState);
+
     }
 
     private void update(){
@@ -134,6 +142,10 @@ public class Game implements Runnable{
     //getters and setters
     public KeyManager getKeyManager(){
         return keyManager;
+    }
+
+    public MouseManager getMouseManager(){
+        return mouseManager;
     }
 
     public GameCamera getGameCamera() {

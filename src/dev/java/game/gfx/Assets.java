@@ -14,9 +14,16 @@ public class Assets {
     public static BufferedImage [] player_up;
     public static BufferedImage [] player_left;
     public static BufferedImage [] player_right;
+    public static BufferedImage [] button_start;
 
     public static void init(){
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet.png"));
+        SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet1.png"));
+
+
+        button_start = new BufferedImage[2];
+        button_start[0] = sheet1.crop(0,0,width*2,height);
+        button_start[1] = sheet1.crop(width*2,0,width*2,height);
 
         player_down = new BufferedImage[2];
         player_down[0] = sheet.crop(0,0,width,height);

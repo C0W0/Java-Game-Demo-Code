@@ -2,6 +2,7 @@ package dev.java.game;
 
 import dev.java.game.display.GameCamera;
 import dev.java.game.input.KeyManager;
+import dev.java.game.input.MouseManager;
 import dev.java.game.worlds.World;
 
 public class Handler {
@@ -19,6 +20,10 @@ public class Handler {
 
     public KeyManager getKeyManager(){
         return game.getKeyManager();
+    }
+
+    public MouseManager getMouseManager(){
+        return game.getMouseManager();
     }
 
     public int getWidth(){
