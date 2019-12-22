@@ -10,6 +10,11 @@ public class Tree extends StaticEntity {
 
     public Tree(Handler handler, float x, float y) {
         super(handler, x, y, Tile.TILEWIDTH, Tile.TILEHEIGHT*2);
+
+        bounds.x = 25;
+        bounds.y = 50;
+        bounds.width = width - 50;
+        bounds.height = height - 50;
     }
 
     @Override

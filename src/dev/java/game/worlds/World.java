@@ -84,12 +84,8 @@ public class World {
     //getters and setters
 
 
-    public int getSpawnX() {
-        return spawnX;
-    }
-
-    public int getSpawnY() {
-        return spawnY;
+    public EntityManager getEntityManager() {
+        return entityManager;
     }
 
     public int getWidth() {

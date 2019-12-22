@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/StaticEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/entities/statics/StaticEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Creature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.wld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/worlds/world1.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/world1.wld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1576962694855" duration="2737000" />
       <workItem from="1576981842396" duration="4078000" />
       <workItem from="1576986509491" duration="1999000" />
-      <workItem from="1577027810605" duration="3694000" />
+      <workItem from="1577027810605" duration="7139000" />
     </task>
     <servers />
   </component>
