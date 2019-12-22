@@ -1,6 +1,9 @@
 package dev.java.game.worlds;
 
 import dev.java.game.Handler;
+import dev.java.game.entities.EntityManager;
+import dev.java.game.entities.creatures.Player;
+import dev.java.game.entities.statics.Tree;
 import dev.java.game.tiles.Tile;
 import dev.java.game.utils.Utils;
 
@@ -13,9 +16,15 @@ public class World {
     private int spawnX, spawnY;
     private int [][] worldTiles;//a 2d array which associates the type of tiles to the location (x,y)
 
+    //entities
+    private EntityManager entityManager;
+
     public World(Handler handler, String path){
         loadWorld(path);
+
         this.handler = handler;
+        entityManager = new EntityManager(handler, new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT));
+        entityManager.addEntity(new Tree(handler, 100, 250));
     }
 
     private void loadWorld(String path){
@@ -50,6 +59,8 @@ public class World {
 
     public void update(){
 
+        entityManager.update();
+
     }
 
     public void render(Graphics graphics){
@@ -64,6 +75,8 @@ public class World {
                 getTile(x,y).render(graphics,(int)(x * Tile.TILEWIDTH - handler.getGameCamera().getxOffset()),(int)(y * Tile.TILEHEIGHT - handler.getGameCamera().getyOffset()));
             }
         }
+
+        entityManager.render(graphics);
 
     }
 

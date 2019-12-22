@@ -54,12 +54,12 @@ public class Player extends Creature{
     }
 
     private BufferedImage getCurrentActionFrame(){
-        if(xMove < 0){
-            return leftAnim.getCurrentFrame();
+        if(yMove < 0){
+            return upAnim.getCurrentFrame();
         } else if(xMove > 0){
             return rightAnim.getCurrentFrame();
-        } else if(yMove < 0){
-            return upAnim.getCurrentFrame();
+        } else if(xMove < 0){
+            return leftAnim.getCurrentFrame();
         } else if(yMove > 0){
             return downAnim.getCurrentFrame();
         } else {
