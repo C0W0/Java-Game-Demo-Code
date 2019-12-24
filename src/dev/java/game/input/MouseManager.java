@@ -16,10 +16,6 @@ public class MouseManager implements MouseListener, MouseMotionListener {
 
     }
 
-    public void setUiManager(UIManager uiManager) {
-        this.uiManager = uiManager;
-    }
-
     //implemented methods
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -94,5 +90,13 @@ public class MouseManager implements MouseListener, MouseMotionListener {
 
     public int getMouseY() {
         return cursorY;
+    }
+
+    public void setUiManager(UIManager uiManager) {
+        this.uiManager = uiManager;
+    }
+
+    public UIManager getUiManager() {
+        return uiManager;
     }
 }
