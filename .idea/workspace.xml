@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/ClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/ClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/GameStartClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/StateSwitchingClicker.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +96,7 @@
       <workItem from="1576981842396" duration="4078000" />
       <workItem from="1576986509491" duration="1999000" />
       <workItem from="1577027810605" duration="15846000" />
-      <workItem from="1577149263755" duration="2463000" />
+      <workItem from="1577149263755" duration="4194000" />
     </task>
     <servers />
   </component>

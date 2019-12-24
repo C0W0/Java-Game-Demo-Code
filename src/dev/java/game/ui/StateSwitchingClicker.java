@@ -3,17 +3,19 @@ package dev.java.game.ui;
 import dev.java.game.Handler;
 import dev.java.game.states.State;
 
-public class GameStartClicker implements ClickListener {
+public class StateSwitchingClicker implements ClickListener {
 
     private Handler handler;
+    private State state;
 
-    public GameStartClicker(Handler handler){
+    public StateSwitchingClicker(Handler handler, State state){
         this.handler = handler;
+        this.state = state;
     }
 
     @Override
     public void onClick() {
-        State.setState(handler.getGame().gameState);
+        State.setState(state);
         handler.getMouseManager().setUiManager(null);
     }
 }

@@ -2,8 +2,7 @@ package dev.java.game.states;
 
 import dev.java.game.Handler;
 import dev.java.game.gfx.Assets;
-import dev.java.game.ui.ClickListener;
-import dev.java.game.ui.GameStartClicker;
+import dev.java.game.ui.StateSwitchingClicker;
 import dev.java.game.ui.UIImageButton;
 import dev.java.game.ui.UIManager;
 
@@ -16,10 +15,9 @@ public class MenuState extends State {
     public MenuState(Handler handler){
         super(handler);
         uiManager = new UIManager(handler);
-        ClickListener gameStartClicker = new GameStartClicker(handler);
         handler.getMouseManager().setUiManager(uiManager);
 
-        uiManager.addUIObject(new UIImageButton(300, 300, 128, 64, Assets.button_start, gameStartClicker));
+        uiManager.addUIObject(new UIImageButton(300, 300, 128, 64, Assets.button_start, new StateSwitchingClicker(handler, handler.getGame().gameState)));
     }
 
     @Override
