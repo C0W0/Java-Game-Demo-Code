@@ -5,17 +5,20 @@ import java.awt.image.BufferedImage;
 public class Animation {
 
     private int speed;
-    private int index;
-    private long lastTime;
-    private long timer;
+    protected int index;
+    protected long lastTime;
+    protected long timer;
     private BufferedImage[] frames;
 
-    public Animation(int speed, BufferedImage[] frames){
+    public Animation(int speed, BufferedImage[] frames, boolean initAction){
         this.speed = speed;
         this.frames = frames;
         index = 0;
         lastTime = System.currentTimeMillis();
         timer = 0;
+        if(initAction){
+            timer = speed;
+        }
     }
 
     public BufferedImage getCurrentFrame(){
