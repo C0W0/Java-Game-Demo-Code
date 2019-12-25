@@ -9,6 +9,10 @@ import java.awt.Rectangle;
 public abstract class Entity {
 
     //Entities
+    public static final int DEFAULT_HEALTH = 10;
+    protected int health;
+    protected boolean active;
+
     protected float x,y;
     protected Handler handler;
     protected int width, height; //the size of the entity
@@ -20,6 +24,8 @@ public abstract class Entity {
         this.y = y;
         this.width = width;
         this.height = height;
+        active = true;
+        health = DEFAULT_HEALTH;
 
         bounds = new Rectangle(0, 0, width, height);//default
     }
@@ -28,6 +34,16 @@ public abstract class Entity {
 
     public abstract void render(Graphics graphics);
 
+    public abstract void die();
+
+
+    public void receiveDamage(int num){
+        health -= num;
+        if(health <= 0){
+            active = false;
+            die();
+        }
+    }
 
     public Rectangle getCollisionBounds(float xOffset, float yOffset){
         return new Rectangle((int)(x + bounds.x + xOffset), (int)(y + bounds.y + yOffset), bounds.width, bounds.height);
@@ -79,7 +95,20 @@ public abstract class Entity {
     public void setWidth(int width) {
         this.width = width;
     }
-    //
 
+    public boolean isActive() {
+        return active;
+    }
 
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
 }
