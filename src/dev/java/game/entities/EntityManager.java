@@ -6,6 +6,7 @@ import dev.java.game.entities.creatures.Player;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 
 public class EntityManager {
 
@@ -36,12 +37,13 @@ public class EntityManager {
     }
 
     public void update(){
+        Iterator<Entity> it = entities.iterator();
 
-        for(int i = 0; i < entities.size(); i++){
-            Entity e = entities.get(i);
+        while(it.hasNext()){
+            Entity e = it.next();
             e.update();
             if(!e.isActive()){
-                entities.remove(e);
+                it.remove();
             }
         }
         entities.sort(renderComparator);

@@ -2,6 +2,7 @@ package dev.java.game.entities.statics;
 
 import dev.java.game.Handler;
 import dev.java.game.gfx.Assets;
+import dev.java.game.items.Item;
 import dev.java.game.tiles.Tile;
 
 import java.awt.Graphics;
@@ -29,6 +30,6 @@ public class Tree extends StaticEntity {
 
     @Override
     public void die() {
-
+        handler.getWorld().getItemManager().addItem(Item.woodItem.createNew((int)(x + width/2 - Item.ITEMWIDTH/2), (int)(y + height - Item.ITEMHEIGHT)));
     }
 }

@@ -4,6 +4,7 @@ import dev.java.game.Handler;
 import dev.java.game.entities.EntityManager;
 import dev.java.game.entities.creatures.Player;
 import dev.java.game.entities.statics.Tree;
+import dev.java.game.items.ItemManager;
 import dev.java.game.tiles.Tile;
 import dev.java.game.utils.Utils;
 
@@ -19,11 +20,16 @@ public class World {
     //entities
     private EntityManager entityManager;
 
+    //items
+    private ItemManager itemManager;
+
     public World(Handler handler, String path){
         loadWorld(path);
 
         this.handler = handler;
         entityManager = new EntityManager(handler, new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT));
+        itemManager = new ItemManager(handler);
+
         entityManager.addEntity(new Tree(handler, 100, 250));
     }
 
@@ -60,6 +66,7 @@ public class World {
     public void update(){
 
         entityManager.update();
+        itemManager.update();
 
     }
 
@@ -76,16 +83,35 @@ public class World {
             }
         }
 
+        itemManager.render(graphics);
         entityManager.render(graphics);
 
     }
 
 
     //getters and setters
-
-
     public EntityManager getEntityManager() {
         return entityManager;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
+    public ItemManager getItemManager() {
+        return itemManager;
+    }
+
+    public void setItemManager(ItemManager itemManager) {
+        this.itemManager = itemManager;
+    }
+
+    public Handler getHandler() {
+        return handler;
+    }
+
+    public void setHandler(Handler handler) {
+        this.handler = handler;
     }
 
     public int getWidth() {

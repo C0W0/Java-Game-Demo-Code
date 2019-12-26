@@ -3,16 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Animation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Animation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Animation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +108,8 @@
       <workItem from="1577149263755" duration="5099000" />
       <workItem from="1577212472904" duration="3782000" />
       <workItem from="1577243038042" duration="3544000" />
-      <workItem from="1577287468335" duration="14726000" />
+      <workItem from="1577287468335" duration="16156000" />
+      <workItem from="1577321793213" duration="5055000" />
     </task>
     <servers />
   </component>

@@ -9,8 +9,11 @@ public class Assets {
     private static final int width = 64;
     private static final int height = 64;
 
-    public static BufferedImage player_neutral, grass,grassStone,tree,dirt,dirtStone;
+    public static BufferedImage grass,grassStone,tree,dirt,dirtStone;
 
+    public static BufferedImage wood;
+
+    public static BufferedImage player_neutral;
     public static BufferedImage [] player_down, player_up, player_left, player_right;
     public static BufferedImage [] attack_down, attack_up, attack_left, attack_right;
 
@@ -65,6 +68,8 @@ public class Assets {
         tree = sheet1.crop(width*4,height,width,height);
         dirt = sheet1.crop(width*5,height,width,height);
         dirtStone = sheet1.crop(width*6,height,width,height);
+
+        wood = sheet1.crop(width*7,height,width,height);
     }
 
 }
