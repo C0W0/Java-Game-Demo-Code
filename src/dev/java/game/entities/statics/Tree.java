@@ -16,6 +16,7 @@ public class Tree extends StaticEntity {
         bounds.y = 50;
         bounds.width = width - 50;
         bounds.height = height - 50;
+        health = 2;
     }
 
     @Override
@@ -30,6 +31,6 @@ public class Tree extends StaticEntity {
 
     @Override
     public void die() {
-        handler.getWorld().getItemManager().addItem(Item.woodItem.createNew((int)(x + width/2 - Item.ITEMWIDTH/2), (int)(y + height - Item.ITEMHEIGHT)));
+        handler.getWorld().getItemManager().addItem(Item.woodItem.createNew((int)(x + width/2 - Item.ITEMWIDTH/2), (int)(y + height - Item.ITEMHEIGHT), 5));
     }
 }

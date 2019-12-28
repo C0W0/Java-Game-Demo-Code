@@ -4,6 +4,7 @@ import dev.java.game.Handler;
 import dev.java.game.gfx.Assets;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
 public class Item {
@@ -16,26 +17,35 @@ public class Item {
     //class
     public static final int ITEMWIDTH = 32;
     public static final int ITEMHEIGHT = 32;
-    public static final int PICKED_UP = -1;
 
     protected Handler handler;
     protected BufferedImage texture;
     protected String name;
     protected final int id;
 
+    protected Rectangle bounds;
+
     protected int x, y;
     protected int count;
+    protected boolean pickedUP;
 
     public Item(BufferedImage texture, String name, int id){
         this.texture = texture;
         this.name = name;
         this.id = id;
-        count = 1;
+
+        bounds = new Rectangle(x, y, ITEMWIDTH, ITEMHEIGHT);
+        pickedUP = false;
 
         items[id] = this;
     }
 
     public void update(){
+
+        if(handler.getWorld().getEntityManager().getPlayer().getCollisionBounds(0f, 0f).intersects(bounds)){
+            pickedUP = true;
+            handler.getWorld().getEntityManager().getPlayer().getInventory().addItem(this);
+        }
 
     }
 
@@ -53,10 +63,13 @@ public class Item {
     public void setPosition(int x, int y){
         this.x = x;
         this.y = y;
+        bounds.x = x;
+        bounds.y = y;
     }
 
-    public Item createNew(int x, int y){
+    public Item createNew(int x, int y, int count){
         Item i = new Item(texture, name, id);
+        i.count = count;
         i.setPosition(x, y);
         return i;
     }
@@ -113,5 +126,9 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isPickedUP() {
+        return pickedUP;
     }
 }

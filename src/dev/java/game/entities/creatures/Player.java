@@ -6,6 +6,7 @@ import dev.java.game.entities.Entity;
 import dev.java.game.gfx.Animation;
 import dev.java.game.gfx.Assets;
 import dev.java.game.gfx.AttackAnimation;
+import dev.java.game.inventory.Inventory;
 
 import java.awt.Graphics;
 import java.awt.Rectangle;
@@ -27,6 +28,8 @@ public class Player extends Creature{
     private float deltaAttack;
     //attack speed
     private long lastAttackTime, attackCooldown, attackTimer;
+    //inventory
+    private Inventory inventory;
 
 
 
@@ -56,6 +59,8 @@ public class Player extends Creature{
 
         attackInAction = false;
         deltaAttack = 0.0f;
+
+        inventory = new Inventory(handler);
     }
 
     private void checkAttacks(){
@@ -188,6 +193,8 @@ public class Player extends Creature{
             deltaAttack = 0;
         }
 
+        //inventory
+        inventory.update();
     }
 
     @Override
@@ -204,6 +211,7 @@ public class Player extends Creature{
             graphics.drawImage(getCurrentActionFrame(),(int)(x - handler.getGameCamera().getxOffset()),(int)(y - handler.getGameCamera().getyOffset()), width, height, null);
         }
 
+        inventory.render(graphics);
     }
 
     @Override
@@ -211,4 +219,7 @@ public class Player extends Creature{
         System.out.println("You lose");
     }
 
+    public Inventory getInventory() {
+        return inventory;
+    }
 }

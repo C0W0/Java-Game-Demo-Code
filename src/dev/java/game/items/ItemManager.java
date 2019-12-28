@@ -27,7 +27,7 @@ public class ItemManager {
         while(it.hasNext()){
             Item item = it.next();
             item.update();
-            if(item.getCount() == Item.PICKED_UP){
+            if(item.isPickedUP()){
                 it.remove();
             }
         }
