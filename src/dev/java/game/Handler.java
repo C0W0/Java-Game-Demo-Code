@@ -34,7 +34,6 @@ public class Handler {
         return game.getHeight();
     }
 
-    //getters and setters
     public Game getGame() {
         return game;
     }

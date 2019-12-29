@@ -1,5 +1,6 @@
 package dev.java.game.gfx;
 
+import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.util.Base64;
 
@@ -8,6 +9,8 @@ public class Assets {
 
     private static final int width = 64;
     private static final int height = 64;
+
+    public static Font font28;
 
     public static BufferedImage grass,grassStone,tree,dirt,dirtStone;
 
@@ -20,10 +23,16 @@ public class Assets {
     public static BufferedImage [] button_start;
     public static BufferedImage [] button_settings;
 
+    public static BufferedImage inventoryScreen;
+
     public static void init(){
+        font28 = FontLoader.loadFont("res/fonts/BLKCHCRY.ttf", 28);
+
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet.png"));
         SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet1.png"));
 
+
+        inventoryScreen = ImageLoader.loadImage("/texture/InventoryScreen.png");
 
         button_start = new BufferedImage[2];
         button_start[0] = sheet1.crop(0,0,width*2,height);

@@ -67,6 +67,13 @@ public class Item {
         bounds.y = y;
     }
 
+    public Item createNew(int count){
+        Item i = new Item(texture, name, id);
+        i.setPickedUP(true);
+        i.count = count;
+        return i;
+    }
+
     public Item createNew(int x, int y, int count){
         Item i = new Item(texture, name, id);
         i.count = count;
@@ -130,5 +137,9 @@ public class Item {
 
     public boolean isPickedUP() {
         return pickedUP;
+    }
+
+    public void setPickedUP(boolean pickedUP) {
+        this.pickedUP = pickedUP;
     }
 }

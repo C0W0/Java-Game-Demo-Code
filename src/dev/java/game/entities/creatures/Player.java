@@ -70,6 +70,9 @@ public class Player extends Creature{
         if(attackTimer < attackCooldown){
             return;
         }
+        if(inventory.isActive()){
+            return;
+        }
         attackInAction = false;
 
         Rectangle collisionBox = getCollisionBounds(0,0);
@@ -120,6 +123,10 @@ public class Player extends Creature{
     private void getInput(){
         xMove = 0;
         yMove = 0;
+
+        if(inventory.isActive()){
+            return;
+        }
 
         if(handler.getKeyManager().up){
             yMove = -speed;
@@ -211,12 +218,15 @@ public class Player extends Creature{
             graphics.drawImage(getCurrentActionFrame(),(int)(x - handler.getGameCamera().getxOffset()),(int)(y - handler.getGameCamera().getyOffset()), width, height, null);
         }
 
-        inventory.render(graphics);
     }
 
     @Override
     public void die() {
         System.out.println("You lose");
+    }
+
+    public void postRender(Graphics graphics){
+        inventory.render(graphics);
     }
 
     public Inventory getInventory() {

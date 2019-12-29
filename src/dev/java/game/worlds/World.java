@@ -31,6 +31,8 @@ public class World {
         itemManager = new ItemManager(handler);
 
         entityManager.addEntity(new Tree(handler, 100, 250));
+        entityManager.addEntity(new Tree(handler, 200, 250));
+        entityManager.addEntity(new Tree(handler, 350, 400));
     }
 
     private void loadWorld(String path){
