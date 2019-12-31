@@ -13,6 +13,7 @@ public class Assets {
     public static Font font28;
 
     public static BufferedImage grass,grassStone,tree,dirt,dirtStone;
+    public static BufferedImage pathVertical, pathHorizontal, pathCornerUpRight, pathCornerUpLeft, pathCornerDownLeft, pathCornerDownRight;
 
     public static BufferedImage wood;
 
@@ -22,6 +23,7 @@ public class Assets {
 
     public static BufferedImage [] button_start;
     public static BufferedImage [] button_settings;
+    public static BufferedImage [] button_SDK;
 
     public static BufferedImage inventoryScreen;
 
@@ -30,6 +32,7 @@ public class Assets {
 
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet.png"));
         SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet1.png"));
+        SpriteSheet townTiles = new SpriteSheet(ImageLoader.loadImage("/texture/RemixTownTiles.png"));
 
 
         inventoryScreen = ImageLoader.loadImage("/texture/InventoryScreen.png");
@@ -40,6 +43,9 @@ public class Assets {
         button_settings = new BufferedImage[2];
         button_settings[0] = sheet1.crop(width*4,0,width*2,height);
         button_settings[1] = sheet1.crop(width*6,0,width*2,height);
+        button_SDK = new BufferedImage[2];
+        button_SDK[0] = sheet1.crop(0,height,width*2,height);
+        button_SDK[1] = sheet1.crop(0,height*2,width*2,height);
 
         player_down = new BufferedImage[2];
         player_down[0] = sheet.crop(0,0,width,height);
@@ -72,11 +78,18 @@ public class Assets {
         attack_left[1] = sheet.crop(0,height*3,width,height);
         attack_left[2] = sheet.crop(0,height*3,width,height);
 
-        grass = sheet1.crop(width*2, height,width,height);
+        grass = townTiles.crop(0,height,width,height);//(width*2, height,width,height);
         grassStone = sheet1.crop(width*3,height,width,height);
-        tree = sheet1.crop(width*4,height,width,height);
-        dirt = sheet1.crop(width*5,height,width,height);
+        tree = townTiles.crop(width*5,height*3,width,height*2);//(width*4,height,width,height);
+        dirt = townTiles.crop(width,height,width,height);//(width*5,height,width,height);
         dirtStone = sheet1.crop(width*6,height,width,height);
+
+        pathVertical = townTiles.crop(width*2,height,width,height);
+        pathHorizontal = townTiles.crop(width*2,height*2,width,height);
+        pathCornerUpRight = townTiles.crop(width,height*2,width,height);
+        pathCornerUpLeft = townTiles.crop(width,height*3,width,height);
+        pathCornerDownLeft = townTiles.crop(0,height*3,width,height);
+        pathCornerDownRight = townTiles.crop(width*2,height*3,width,height);
 
         wood = sheet1.crop(width*7,height,width,height);
     }

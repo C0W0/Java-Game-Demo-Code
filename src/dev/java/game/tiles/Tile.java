@@ -10,9 +10,8 @@ public abstract class Tile {
     public static Tile[] tiles = new Tile[512];
     public static Tile grassTile = new GrassTile(0);
     public static Tile grassRockTile = new GrassRockTile(1);
-    public static Tile treeTile = new TreeTile(2);
-    public static Tile dirtTile = new DirtTile(3);
-    public static Tile dirtRockTile = new DirtRockTile(4);
+    public static Tile dirtTile = new DirtTile(2);
+    public static Tile dirtRockTile = new DirtRockTile(3);
 
 
     //default values

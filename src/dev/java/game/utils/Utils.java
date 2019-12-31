@@ -15,7 +15,9 @@ public class Utils {
             String line;
             while((line = br.readLine()) != null){
                 String newLine = line + "\n";
-                builder.append(newLine);
+                if(!newLine.startsWith("//")){
+                    builder.append(newLine);
+                }
             }
             br.close();
         }catch (IOException e){

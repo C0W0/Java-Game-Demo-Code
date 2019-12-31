@@ -5,10 +5,7 @@ import dev.java.game.gfx.Assets;
 import dev.java.game.display.GameCamera;
 import dev.java.game.input.KeyManager;
 import dev.java.game.input.MouseManager;
-import dev.java.game.states.GameState;
-import dev.java.game.states.MenuState;
-import dev.java.game.states.SettingsState;
-import dev.java.game.states.State;
+import dev.java.game.states.*;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
@@ -36,6 +33,7 @@ public class Game implements Runnable{
     public State gameState;
     public State menuState;
     public State settingsState;
+    public State sdkState;
 
     private int width, height;
     public String title;
@@ -65,9 +63,10 @@ public class Game implements Runnable{
         handler = new Handler(this);
         gameCamera = new GameCamera(handler,0,0);
 
-        gameState = new GameState(handler);
-        menuState = new MenuState(handler);
         settingsState = new SettingsState(handler);
+        gameState = new GameState(handler);
+        sdkState = new SDKState(handler);
+        menuState = new MenuState(handler);
         State.setState(menuState);
 
     }
