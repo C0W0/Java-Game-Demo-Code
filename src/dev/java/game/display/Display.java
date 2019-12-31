@@ -2,6 +2,8 @@ package dev.java.game.display;
 
 import javax.swing.JFrame;
 import java.awt.*;
+//import java.awt.image.BufferedImage;
+//import java.awt.image.DataBufferInt;
 
 public class Display {
 
@@ -12,10 +14,16 @@ public class Display {
     private int width;
     private int height;
 
+    //private BufferedImage view;
+    //private int[] pixels;
+
     public Display(String title, int width, int height){
         this.title = title;
         this.width = width;
         this.height = height;
+
+        //view = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        //pixels = ((DataBufferInt) view.getRaster().getDataBuffer()).getData();
 
         createDisplay();
     }

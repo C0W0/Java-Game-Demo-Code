@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/FontLoader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Text.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/fonts/BLACKCHA.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/fonts/BLKCHCRY.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/texture/InventoryScreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fonts/BLACKCHA.TXT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/fonts/BLKCHCRY.TTF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/texture/InventoryScreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/FontLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Text.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/inventory/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/inventory/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/items/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/items/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/worlds/world1.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/world1.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/inventory/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/display/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/display/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/FPSTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/FPSTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/display/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/display/Display.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +105,9 @@
       <workItem from="1577498739497" duration="910000" />
       <workItem from="1577499938845" duration="537000" />
       <workItem from="1577564328260" duration="7661000" />
-      <workItem from="1577638282918" duration="5492000" />
+      <workItem from="1577638282918" duration="5562000" />
+      <workItem from="1577733158129" duration="2602000" />
+      <workItem from="1577756617462" duration="2748000" />
     </task>
     <servers />
   </component>

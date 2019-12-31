@@ -8,7 +8,7 @@ public class FPSTimer {
     private long lastTime;
     //private long time;
     //private int frames;
-    //The code that are commented out are for FPS dispplay
+    //The code that are commented out are for FPS display
 
 
     public FPSTimer(int FPS){
