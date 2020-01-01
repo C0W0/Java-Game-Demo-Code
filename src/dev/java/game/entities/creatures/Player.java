@@ -127,6 +127,10 @@ public class Player extends Creature{
         if(inventory.isActive()){
             return;
         }
+        //SDK stuff
+        if(handler.getKeyManager().ctrl)
+            return;
+        //
 
         if(handler.getKeyManager().up){
             yMove = -speed;

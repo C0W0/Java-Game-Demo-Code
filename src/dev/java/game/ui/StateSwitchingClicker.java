@@ -22,7 +22,7 @@ public class StateSwitchingClicker implements ClickListener {
         State.setState(state);
         //handler.getMouseManager().setUiManager(null);
         for(int i = 0; i < uiObjects.size(); i++){
-            handler.getMouseManager().getUiManager().removeUIObject(handler.getMouseManager().getUiManager().getUiObjects().get(i));
+            handler.getMouseManager().getUiManager().removeUIObject(handler.getMouseManager().getUiManager().getUiObjects().get(1));
         }
     }
 }

@@ -9,6 +9,9 @@ import dev.java.game.tiles.Tile;
 import dev.java.game.utils.Utils;
 
 import java.awt.Graphics;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class World {
 
@@ -23,8 +26,16 @@ public class World {
     //items
     private ItemManager itemManager;
 
+    //SDK stuff
+    private File mapFile;
+    private String path;
+
     public World(Handler handler, String path){
         loadWorld(path);
+        //SDK stuff
+        mapFile = new File(path);
+        this.path = path;
+        //
 
         this.handler = handler;
         entityManager = new EntityManager(handler, new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT));
@@ -90,6 +101,63 @@ public class World {
 
     }
 
+    //SDK stuff
+
+    public void setTile(int tileX, int tileY, int tileID){
+
+        if(worldTiles[tileX][tileY] == tileID){
+            return;
+        }
+        worldTiles[tileX][tileY] = tileID;
+
+    }
+
+    public void resetTile(int tileX, int tileY){
+
+        String[] tokens = Utils.loadFileAsString(path).split("\\s+");
+
+        int[][] savedTiles = new int[width][height];
+
+        for(int y = 0; y < height; y++){
+            for(int x = 0; x < width; x++){
+                savedTiles[x][y] = Utils.parseInt(tokens[x + y * width + 4]);
+            }
+        }
+
+        if(worldTiles[tileX][tileY] == savedTiles[tileX][tileY]){
+            return;
+        }
+        worldTiles[tileX][tileY] = savedTiles[tileX][tileY];
+
+    }
+
+    public void saveMap(){
+
+        if(mapFile.exists()){
+            mapFile.delete();
+        }
+
+        try {
+            mapFile.createNewFile();
+            PrintWriter printWriter = new PrintWriter(mapFile);
+            printWriter.println(width+" "+height);
+            printWriter.println(spawnX+" "+spawnY);
+
+            for(int y = 0; y < height; y++){
+                for(int x = 0; x < width; x++){
+                   printWriter.print(worldTiles[x][y]+" ");
+                }
+                printWriter.println();
+            }
+            printWriter.close();
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    //
 
     //getters and setters
     public EntityManager getEntityManager() {
