@@ -29,12 +29,14 @@ public class World {
     //SDK stuff
     private File mapFile;
     private String path;
+    private int sdkTileID;
 
     public World(Handler handler, String path){
         loadWorld(path);
         //SDK stuff
         mapFile = new File(path);
         this.path = path;
+        sdkTileID = 0;
         //
 
         this.handler = handler;
@@ -103,12 +105,12 @@ public class World {
 
     //SDK stuff
 
-    public void setTile(int tileX, int tileY, int tileID){
+    public void setTile(int tileX, int tileY){
 
-        if(worldTiles[tileX][tileY] == tileID){
+        if(worldTiles[tileX][tileY] == sdkTileID){
             return;
         }
-        worldTiles[tileX][tileY] = tileID;
+        worldTiles[tileX][tileY] = sdkTileID;
 
     }
 
@@ -155,6 +157,10 @@ public class World {
             e.printStackTrace();
         }
 
+    }
+
+    public void setSDKTIle(int id){
+        sdkTileID = id;
     }
 
     //

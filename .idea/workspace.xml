@@ -2,20 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK_old.wld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/worlds/worldSDK_old.wld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/input/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/input/KeyManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/sdk/MapEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/MenuState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/StateSwitchingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/StateSwitchingClicker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/ClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/StateSwitchingClicker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIImageButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIImageButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/input/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/input/KeyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/sdk/MapEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/StateSwitchingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/StateSwitchingClicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/ClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/ClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/StateSwitchingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/StateSwitchingClicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/UIImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/UIImageButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/UIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/UIObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,7 +141,7 @@
       <workItem from="1577816009022" duration="4018000" />
       <workItem from="1577825635398" duration="8682000" />
       <workItem from="1577836357153" duration="5754000" />
-      <workItem from="1577894460654" duration="1752000" />
+      <workItem from="1577894460654" duration="8162000" />
     </task>
     <servers />
   </component>

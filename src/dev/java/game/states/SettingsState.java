@@ -18,4 +18,9 @@ public class SettingsState extends State {
     public void render(Graphics graphics) {
 
     }
+
+    @Override
+    public void init() {
+
+    }
 }

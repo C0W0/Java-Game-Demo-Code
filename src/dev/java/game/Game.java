@@ -6,6 +6,7 @@ import dev.java.game.display.GameCamera;
 import dev.java.game.input.KeyManager;
 import dev.java.game.input.MouseManager;
 import dev.java.game.states.*;
+import dev.java.game.ui.UIManager;
 
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
@@ -33,7 +34,13 @@ public class Game implements Runnable{
     public State gameState;
     public State menuState;
     public State settingsState;
+
+    //SDK stuff
     public State sdkState;
+    //
+
+    //ui
+    private UIManager uiManager;
 
     private int width, height;
     public String title;
@@ -62,11 +69,16 @@ public class Game implements Runnable{
 
         handler = new Handler(this);
         gameCamera = new GameCamera(handler,0,0);
+        uiManager = new UIManager(handler);
+        mouseManager.setUiManager(uiManager);
 
         settingsState = new SettingsState(handler);
         gameState = new GameState(handler);
+        //SDK stuff
         sdkState = new SDKState(handler);
+        //
         menuState = new MenuState(handler);
+
         State.setState(menuState);
 
     }
@@ -149,6 +161,10 @@ public class Game implements Runnable{
 
     public GameCamera getGameCamera() {
         return gameCamera;
+    }
+
+    public UIManager getUiManager() {
+        return uiManager;
     }
 
     public int getWidth() {

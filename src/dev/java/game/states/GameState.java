@@ -24,4 +24,9 @@ public class GameState extends State {
     public void render(Graphics graphics) {
         world.render(graphics);
     }
+
+    @Override
+    public void init() {
+
+    }
 }

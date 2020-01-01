@@ -20,6 +20,8 @@ public abstract class State {
 
     public abstract void render(Graphics graphics);
 
+    public abstract void init();
+
     //getters and setters
 
     public static void setState(State state){

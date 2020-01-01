@@ -1,4 +1,4 @@
-package dev.java.game.ui;
+package dev.java.game.ui.clicker;
 
 import dev.java.game.Handler;
 
