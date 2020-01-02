@@ -8,6 +8,7 @@ public abstract class UIObject {
 
     protected float x, y;
     protected int width, height;
+    protected boolean active = true;
     protected boolean hovering = false;
     protected boolean selected = false;
     protected Rectangle bounds;
@@ -83,5 +84,13 @@ public abstract class UIObject {
 
     public void setSelected(boolean selected) {
         this.selected = selected;
+    }
+
+    public void setActive() {
+        active = !active;
+    }
+
+    public boolean isActive() {
+        return active;
     }
 }

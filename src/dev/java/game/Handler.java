@@ -1,8 +1,10 @@
 package dev.java.game;
 
+import dev.java.game.display.Display;
 import dev.java.game.display.GameCamera;
 import dev.java.game.input.KeyManager;
 import dev.java.game.input.MouseManager;
+import dev.java.game.states.State;
 import dev.java.game.ui.UIManager;
 import dev.java.game.worlds.World;
 
@@ -47,11 +49,20 @@ public class Handler {
         this.game = game;
     }
 
+    public Display getDisplay(){
+        return game.getDisplay();
+    }
+
     public World getWorld() {
         return world;
     }
 
     public void setWorld(World world) {
         this.world = world;
+    }
+
+    //SDK stuff
+    public State getSDKState(){
+        return game.sdkState;
     }
 }

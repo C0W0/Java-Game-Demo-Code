@@ -10,7 +10,7 @@ public class Assets {
     private static final int width = 64;
     private static final int height = 64;
 
-    public static Font font28;
+    public static Font font28, font20;
 
     public static BufferedImage grass,grassStone,tree,dirt,dirtStone;
     public static BufferedImage pathVertical, pathHorizontal, pathCornerUpRight, pathCornerUpLeft, pathCornerDownLeft, pathCornerDownRight;
@@ -25,14 +25,16 @@ public class Assets {
     public static BufferedImage [] button_settings;
 
     //SDK stuff
-    public static BufferedImage [] button_SDK;
-    public static BufferedImage [] grass_SDK, dirt_SDK, pathV_SDK, pathH_SDK, pathUpRight_SDK, pathUpLeft_SDK, pathDownRight_SDK, pathDownLeft_SDK;
+    public static BufferedImage slideTrack, slider, tickMark;
+    public static BufferedImage [] button_SDK, button_new, button_save;
+    public static BufferedImage [] grass_SDK, grassStone_SDK, dirt_SDK, dirtStone_SDK, pathV_SDK, pathH_SDK, pathUpRight_SDK, pathUpLeft_SDK, pathDownRight_SDK, pathDownLeft_SDK;
     //
 
     public static BufferedImage inventoryScreen;
 
     public static void init(){
         font28 = FontLoader.loadFont("res/fonts/BLKCHCRY.ttf", 28);
+        font20 = FontLoader.loadFont("res/fonts/BLKCHCRY.ttf", 20);
 
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet.png"));
         SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/texture/SpriteSheet1.png"));
@@ -79,10 +81,10 @@ public class Assets {
         attack_left[1] = sheet.crop(0,height*3,width,height);
         attack_left[2] = sheet.crop(0,height*3,width,height);
 
-        grass = townTiles.crop(0,height,width,height);//(width*2, height,width,height);
+        grass = townTiles.crop(0,height,width,height);
         grassStone = sheet1.crop(width*3,height,width,height);
-        tree = townTiles.crop(width*5,height*3,width,height*2);//(width*4,height,width,height);
-        dirt = townTiles.crop(width,height,width,height);//(width*5,height,width,height);
+        tree = townTiles.crop(width*5,height*3,width,height*2);
+        dirt = townTiles.crop(width,height,width,height);
         dirtStone = sheet1.crop(width*6,height,width,height);
 
         pathVertical = townTiles.crop(width*2,height,width,height);
@@ -99,12 +101,30 @@ public class Assets {
         button_SDK[0] = sheet1.crop(0,height,width*2,height);
         button_SDK[1] = sheet1.crop(0,height*2,width*2,height);
 
+        button_new = new BufferedImage[2];
+        button_new[0] = sheet1.crop(0,height*4,width*2,height);
+        button_new[1] = sheet1.crop(width*2,height*4,width*2,height);
+        button_save = new BufferedImage[2];
+        button_save[0] = sheet1.crop(width*3,height*3,width*2,height);
+        button_save[1] = sheet1.crop(width*5,height*3,width*2,height);
+
+
+        slideTrack = sheet1.crop(width*4,height*4,width*2,height);
+        slider = sheet1.crop(width*6,height*4,width,height);
+        tickMark = sheet1.crop(width*7,height*4,width,height);
+
         grass_SDK = new BufferedImage[2];
         grass_SDK[0] = grass;
         grass_SDK[1] = sheet1.crop(width*2,height*2,width,height);
+        grassStone_SDK = new BufferedImage[2];
+        grassStone_SDK[0] = grassStone;
+        grassStone_SDK[1] = sheet1.crop(width*2,height,width,height);
         dirt_SDK = new BufferedImage[2];
         dirt_SDK[0] = dirt;
         dirt_SDK[1] = sheet1.crop(width*3,height*2,width,height);
+        dirtStone_SDK = new BufferedImage[2];
+        dirtStone_SDK[0] = dirtStone;
+        dirtStone_SDK[1] = sheet1.crop(width*5,height,width,height);
         pathV_SDK = new BufferedImage[2];
         pathV_SDK[0] = pathVertical;
         pathV_SDK[1] = sheet1.crop(width*4,height*2,width,height);

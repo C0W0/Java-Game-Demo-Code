@@ -17,6 +17,6 @@ public class TileEditingClicker implements ClickListener {
         for(int i = 0; i < handler.getMouseManager().getUiManager().getUiObjects().size(); i++){
             handler.getMouseManager().getUiManager().getUiObjects().get(i).setSelected(false);
         }
-        handler.getWorld().setSDKTIle(mapObjectID);
+        handler.getWorld().setSDKTile(mapObjectID);
     }
 }

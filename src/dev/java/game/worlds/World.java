@@ -22,6 +22,7 @@ public class World {
 
     //entities
     private EntityManager entityManager;
+    private Player player;
 
     //items
     private ItemManager itemManager;
@@ -39,8 +40,9 @@ public class World {
         sdkTileID = 0;
         //
 
+        player = new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT);
         this.handler = handler;
-        entityManager = new EntityManager(handler, new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT));
+        entityManager = new EntityManager(handler, player);
         itemManager = new ItemManager(handler);
 
         entityManager.addEntity(new Tree(handler, 100, 250));
@@ -159,8 +161,36 @@ public class World {
 
     }
 
-    public void setSDKTIle(int id){
+    public void setSDKTile(int id){
         sdkTileID = id;
+    }
+
+    public void generateNewMap(int width, int height, int spawnX, int spawnY){
+
+        if(mapFile.exists()){
+            mapFile.delete();
+        }
+
+        try {
+            mapFile.createNewFile();
+            PrintWriter printWriter = new PrintWriter(mapFile);
+            printWriter.println(width+" "+height);
+            printWriter.println(spawnX+" "+spawnY);
+
+            for(int y = 0; y < height; y++){
+                for(int x = 0; x < width; x++){
+                    printWriter.print(sdkTileID+" ");
+                }
+                printWriter.println();
+            }
+            printWriter.close();
+
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+        loadWorld(path);
+        player.setX(spawnX*Tile.TILEWIDTH);
+        player.setY(spawnY*Tile.TILEHEIGHT);
     }
 
     //
@@ -196,5 +226,9 @@ public class World {
 
     public int getHeight() {
         return height;
+    }
+
+    public Player getPlayer() {
+        return player;
     }
 }

@@ -1,6 +1,7 @@
 package dev.java.game.states;
 
 import dev.java.game.Handler;
+
 import java.awt.Graphics;
 
 public class SettingsState extends State {

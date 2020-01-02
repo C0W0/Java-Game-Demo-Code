@@ -18,11 +18,17 @@ public class UIImageButton extends UIObject{
 
     @Override
     public void update() {
+        if(!active){
+            return;
+        }
 
     }
 
     @Override
     public void render(Graphics graphics) {
+        if(!active){
+            return;
+        }
 
         if(hovering){
             graphics.drawImage(images[1], (int)x, (int)y, width, height, null);
@@ -34,6 +40,9 @@ public class UIImageButton extends UIObject{
 
     @Override
     public void onClick() {
+        if(!active){
+            return;
+        }
         clicker.onClick();
     }
 }

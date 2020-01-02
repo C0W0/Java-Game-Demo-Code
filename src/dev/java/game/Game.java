@@ -117,7 +117,7 @@ public class Game implements Runnable{
 
         while(running){
 
-                if (timer.check()){
+            if (timer.check()){
                 update();
                 render();
             }
@@ -165,6 +165,10 @@ public class Game implements Runnable{
 
     public UIManager getUiManager() {
         return uiManager;
+    }
+
+    public Display getDisplay() {
+        return display;
     }
 
     public int getWidth() {

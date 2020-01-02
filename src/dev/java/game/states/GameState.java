@@ -11,22 +11,24 @@ public class GameState extends State {
 
     public GameState(Handler handler){
         super(handler);
-        world = new World(handler,"res/worlds/world1.wld");
-        handler.setWorld(world);
     }
 
     @Override
     public void update() {
-        world.update();
+        if(world != null)
+            world.update();
     }
 
     @Override
     public void render(Graphics graphics) {
-        world.render(graphics);
+        if(world != null){
+            world.render(graphics);
+        }
     }
 
     @Override
     public void init() {
-
+        world = new World(handler,"res/worlds/world1.wld");
+        handler.setWorld(world);
     }
 }

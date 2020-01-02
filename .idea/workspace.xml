@@ -7,14 +7,11 @@
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/MenuState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/ClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/StateSwitchingClicker.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIImageButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIImageButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/TileEditingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/TileEditingClicker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" afterDir="false" />
@@ -24,14 +21,11 @@
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/ClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/ClickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/StateSwitchingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/StateSwitchingClicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/UIImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/UIImageButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/UIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/UIObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/TileEditingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/TileEditingClicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,7 +135,13 @@
       <workItem from="1577816009022" duration="4018000" />
       <workItem from="1577825635398" duration="8682000" />
       <workItem from="1577836357153" duration="5754000" />
-      <workItem from="1577894460654" duration="8162000" />
+      <workItem from="1577894460654" duration="8408000" />
+      <workItem from="1577907232755" duration="3179000" />
+      <workItem from="1577911195559" duration="4595000" />
+      <workItem from="1577918019089" duration="4505000" />
+      <workItem from="1577925824777" duration="1475000" />
+      <workItem from="1577934382627" duration="5814000" />
+      <workItem from="1577996961823" duration="2938000" />
     </task>
     <servers />
   </component>
