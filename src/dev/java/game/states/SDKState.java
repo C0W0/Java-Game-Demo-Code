@@ -2,11 +2,8 @@ package dev.java.game.states;
 
 import dev.java.game.Handler;
 import dev.java.game.gfx.Assets;
-import dev.java.game.ui.Slider;
+import dev.java.game.ui.*;
 import dev.java.game.tiles.Tile;
-import dev.java.game.ui.MapEditorButton;
-import dev.java.game.ui.UIImageButton;
-import dev.java.game.ui.UIManager;
 import dev.java.game.ui.clicker.MapSizingClicker;
 import dev.java.game.ui.clicker.TileEditingClicker;
 import dev.java.game.worlds.World;
@@ -20,6 +17,7 @@ public class SDKState extends State {
     private UIManager uiManager;
     private boolean isHovering;
     private Slider heightSlider, widthSlider, spawnXSlider, spawnYSlider;
+    private SliderAdjuster heightUp, heightDown, widthUp, widthDown, spawnXUp, spawnXDown, spawnYUp, spawnYDown;
 
     public SDKState(Handler handler){
         super(handler);
@@ -87,10 +85,18 @@ public class SDKState extends State {
     public void init() {
         world = new World(handler,"res/worlds/worldSDK.wld");
         handler.setWorld(world);
-        heightSlider = new Slider(64,32,256,32,100,0,10,"height:");
-        widthSlider = new Slider(64,96,256,32,100,0,10,"width:");
-        spawnXSlider = new Slider(336,32,64,16,100,0,10,"spawn x:");
-        spawnYSlider = new Slider(336,96,64,16,100,0,10,"spawn y:");
+        heightSlider = new Slider(true,80,32,256,32,100,0,10,"height:");
+        widthSlider = new Slider(true,80,96,256,32,100,0,10,"width:");
+        spawnXSlider = new Slider(true,384,32,64,16,100,0,20,"spawn x:");
+        spawnYSlider = new Slider(true,384,96,64,16,100,0,20,"spawn y:");
+        heightUp = new SliderAdjuster(64,32,16,16,1,Assets.button_up,heightSlider);
+        heightDown = new SliderAdjuster(64,48,16,16,-1,Assets.button_down,heightSlider);
+        widthUp = new SliderAdjuster(64,96,16,16,1,Assets.button_up,widthSlider);
+        widthDown = new SliderAdjuster(64,112,16,16,-1,Assets.button_down,widthSlider);
+        spawnXUp = new SliderAdjuster(368,32,16,16,1,Assets.button_up,spawnXSlider);
+        spawnXDown = new SliderAdjuster(368,48,16,16,-1,Assets.button_down,spawnXSlider);
+        spawnYUp = new SliderAdjuster(368,96,16,16,1,Assets.button_up,spawnYSlider);
+        spawnYDown = new SliderAdjuster(368,112,16,16,-1,Assets.button_down,spawnYSlider);
         uiManager.addUIObject(new MapEditorButton(16,16,32,32,Assets.grass_SDK,new TileEditingClicker(handler, 0),true));
         uiManager.addUIObject(new MapEditorButton(16,48,32,32,Assets.grassStone_SDK,new TileEditingClicker(handler, 1),false));
         uiManager.addUIObject(new MapEditorButton(16,80,32,32,Assets.dirt_SDK,new TileEditingClicker(handler, 2),false));
@@ -100,10 +106,26 @@ public class SDKState extends State {
         uiManager.addUIObject(widthSlider);
         uiManager.addUIObject(spawnXSlider);
         uiManager.addUIObject(spawnYSlider);
+        uiManager.addUIObject(heightUp);
+        uiManager.addUIObject(heightDown);
+        uiManager.addUIObject(widthUp);
+        uiManager.addUIObject(widthDown);
+        uiManager.addUIObject(spawnXUp);
+        uiManager.addUIObject(spawnXDown);
+        uiManager.addUIObject(spawnYUp);
+        uiManager.addUIObject(spawnYDown);
         heightSlider.setActive();
         widthSlider.setActive();
         spawnXSlider.setActive();
         spawnYSlider.setActive();
+        heightUp.setActive();
+        heightDown.setActive();
+        widthUp.setActive();
+        widthDown.setActive();
+        spawnXUp.setActive();
+        spawnXDown.setActive();
+        spawnYUp.setActive();
+        spawnYDown.setActive();
     }
 
     //getter and setters

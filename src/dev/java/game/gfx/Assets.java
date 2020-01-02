@@ -2,7 +2,6 @@ package dev.java.game.gfx;
 
 import java.awt.Font;
 import java.awt.image.BufferedImage;
-import java.util.Base64;
 
 public class Assets {
 
@@ -21,11 +20,11 @@ public class Assets {
     public static BufferedImage [] player_down, player_up, player_left, player_right;
     public static BufferedImage [] attack_down, attack_up, attack_left, attack_right;
 
-    public static BufferedImage [] button_start;
-    public static BufferedImage [] button_settings;
+    public static BufferedImage [] button_start, button_settings;
+    public static BufferedImage [] button_up, button_down;
+    public static BufferedImage horizontalSlideTrack, horizontalSlider, horizontalTickMark;
 
     //SDK stuff
-    public static BufferedImage slideTrack, slider, tickMark;
     public static BufferedImage [] button_SDK, button_new, button_save;
     public static BufferedImage [] grass_SDK, grassStone_SDK, dirt_SDK, dirtStone_SDK, pathV_SDK, pathH_SDK, pathUpRight_SDK, pathUpLeft_SDK, pathDownRight_SDK, pathDownLeft_SDK;
     //
@@ -49,6 +48,17 @@ public class Assets {
         button_settings = new BufferedImage[2];
         button_settings[0] = sheet1.crop(width*4,0,width*2,height);
         button_settings[1] = sheet1.crop(width*6,0,width*2,height);
+
+        horizontalSlideTrack = sheet1.crop(width*4,height*4,width*2,height);
+        horizontalSlider = sheet1.crop(width*6,height*4,width,height);
+        horizontalTickMark = sheet1.crop(width*7,height*4,width,height);
+
+        button_up = new BufferedImage[2];
+        button_up[0] = sheet1.crop(0,height*5,width,height);
+        button_up[1] = sheet1.crop(width,height*5,width,height);
+        button_down = new BufferedImage[2];
+        button_down[0] = sheet1.crop(width*2,height*5,width,height);
+        button_down[1] = sheet1.crop(width*3,height*5,width,height);
 
         player_down = new BufferedImage[2];
         player_down[0] = sheet.crop(0,0,width,height);
@@ -109,10 +119,6 @@ public class Assets {
         button_save[1] = sheet1.crop(width*5,height*3,width*2,height);
 
 
-        slideTrack = sheet1.crop(width*4,height*4,width*2,height);
-        slider = sheet1.crop(width*6,height*4,width,height);
-        tickMark = sheet1.crop(width*7,height*4,width,height);
-
         grass_SDK = new BufferedImage[2];
         grass_SDK[0] = grass;
         grass_SDK[1] = sheet1.crop(width*2,height*2,width,height);
@@ -135,7 +141,6 @@ public class Assets {
 //        pathUpLeft_SDK = new BufferedImage[2];
 //        pathDownRight_SDK = new BufferedImage[2];
 //        pathDownLeft_SDK = new BufferedImage[2];
-        //
     }
 
 }

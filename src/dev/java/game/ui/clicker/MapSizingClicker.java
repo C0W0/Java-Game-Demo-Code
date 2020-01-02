@@ -34,7 +34,15 @@ public class MapSizingClicker implements ClickListener {
         handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-2).setActive();
         handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-3).setActive();
         handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-4).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-5).setActive();
         handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-6).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-7).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-8).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-9).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-10).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-11).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-12).setActive();
+        handler.getMouseManager().getUiManager().getUiObjects().get(handler.getMouseManager().getUiManager().getUiObjects().size()-14).setActive();
     }
 
     private class MapSaveClicker implements ClickListener{

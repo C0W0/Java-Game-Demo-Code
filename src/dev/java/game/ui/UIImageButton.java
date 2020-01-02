@@ -43,6 +43,8 @@ public class UIImageButton extends UIObject{
         if(!active){
             return;
         }
-        clicker.onClick();
+        if(clicker != null){
+            clicker.onClick();
+        }
     }
 }

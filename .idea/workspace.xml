@@ -3,29 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Handler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/Slider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/Slider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIImageButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIImageButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/UIObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/TileEditingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/TileEditingClicker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/MapSizingClicker$MapSaveClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/MapSizingClicker$MapSaveClicker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/MapSizingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/MapSizingClicker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/Slider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/UIImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/UIImageButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/UIObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/UIObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/TileEditingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/TileEditingClicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/MapSizingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/MapSizingClicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,7 +134,7 @@
       <workItem from="1577918019089" duration="4505000" />
       <workItem from="1577925824777" duration="1475000" />
       <workItem from="1577934382627" duration="5814000" />
-      <workItem from="1577996961823" duration="2938000" />
+      <workItem from="1577996961823" duration="7240000" />
     </task>
     <servers />
   </component>
