@@ -143,10 +143,18 @@ public class Assets {
         pathH_SDK = new BufferedImage[2];
         pathH_SDK[0] = pathHorizontal;
         pathH_SDK[1] = sheet1.crop(width*5,height*2,width,height);
-//        pathUpRight_SDK = new BufferedImage[2];
-//        pathUpLeft_SDK = new BufferedImage[2];
-//        pathDownRight_SDK = new BufferedImage[2];
-//        pathDownLeft_SDK = new BufferedImage[2];
+        pathUpRight_SDK = new BufferedImage[2];
+        pathUpRight_SDK[0] = pathCornerUpRight;
+        pathUpRight_SDK[1] = sheet1.crop(width*6,height*2,width,height);
+        pathUpLeft_SDK = new BufferedImage[2];
+        pathUpLeft_SDK[0] = pathCornerUpLeft;
+        pathUpLeft_SDK[1] = sheet1.crop(width*7,height*2,width,height);
+        pathDownRight_SDK = new BufferedImage[2];
+        pathDownRight_SDK[0] = pathCornerDownRight;
+        pathDownRight_SDK[1] = sheet1.crop(0,height*3,width,height);
+        pathDownLeft_SDK = new BufferedImage[2];
+        pathDownLeft_SDK[0] = pathCornerDownLeft;
+        pathDownLeft_SDK[1] = sheet1.crop(width,height*3,width,height);
     }
 
 }

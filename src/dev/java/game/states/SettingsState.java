@@ -26,7 +26,7 @@ public class SettingsState extends State {
         super(handler);
         uiManager = handler.getUIManager();
         screenSizes[0] = new ScreenSize(800,600,"800*600");
-        screenSizes[1] = new ScreenSize(1024,720,"1024*720");
+        screenSizes[1] = new ScreenSize(1024,768,"1024*768");
         screenSizes[2] = new ScreenSize(1920,1080,"1920*1080");
         fps[0] = new ScreenSize(45,0,"45");
         fps[1] = new ScreenSize(60,0,"60");

@@ -3,24 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/Launcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/MenuState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SettingsState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/Slider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/Slider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/StateSwitchingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/StateSwitchingClicker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/tiles/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/tiles/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/settings/settings.set" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/settings/settings.set" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/settings/settings.set" beforeDir="false" afterPath="$PROJECT_DIR$/res/settings/settings.set" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/MenuState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SettingsState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/Slider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/StateSwitchingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/StateSwitchingClicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/tiles/Tile.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +37,10 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/res/worlds" />
@@ -136,7 +134,7 @@
       <workItem from="1577925824777" duration="1475000" />
       <workItem from="1577934382627" duration="5814000" />
       <workItem from="1577996961823" duration="8002000" />
-      <workItem from="1578081832069" duration="8176000" />
+      <workItem from="1578081832069" duration="9847000" />
     </task>
     <servers />
   </component>

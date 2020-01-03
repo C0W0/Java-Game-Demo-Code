@@ -12,6 +12,13 @@ public abstract class Tile {
     public static Tile grassRockTile = new GrassRockTile(1);
     public static Tile dirtTile = new DirtTile(2);
     public static Tile dirtRockTile = new DirtRockTile(3);
+    public static Tile horizontalPath = new HorizontalPath(4);
+    public static Tile verticalPath = new VerticalPath(5);
+    public static Tile pathUpRight = new PathUpRight(6);
+    public static Tile pathUpLeft = new PathUpLeft(7);
+    public static Tile pathDownRight = new PathDownRight(8);
+    public static Tile pathDownLeft = new PathDownLeft(9);
+
 
 
     //default values

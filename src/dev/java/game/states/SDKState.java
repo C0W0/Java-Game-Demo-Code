@@ -101,6 +101,14 @@ public class SDKState extends State {
         uiManager.addUIObject(new MapEditorButton(16,48,32,32,Assets.grassStone_SDK,new TileEditingClicker(handler, 1),false));
         uiManager.addUIObject(new MapEditorButton(16,80,32,32,Assets.dirt_SDK,new TileEditingClicker(handler, 2),false));
         uiManager.addUIObject(new MapEditorButton(16,112,32,32,Assets.dirtStone_SDK,new TileEditingClicker(handler, 3),false));
+        uiManager.addUIObject(new MapEditorButton(16,144,32,32,Assets.pathH_SDK,new TileEditingClicker(handler, 4),false));
+        uiManager.addUIObject(new MapEditorButton(16,176,32,32,Assets.pathV_SDK,new TileEditingClicker(handler, 5),false));
+        uiManager.addUIObject(new MapEditorButton(16,208,32,32,Assets.pathUpRight_SDK,new TileEditingClicker(handler, 6),false));
+        uiManager.addUIObject(new MapEditorButton(16,240,32,32,Assets.pathUpLeft_SDK,new TileEditingClicker(handler, 7),false));
+        uiManager.addUIObject(new MapEditorButton(16,272,32,32,Assets.pathDownRight_SDK,new TileEditingClicker(handler, 8),false));
+        uiManager.addUIObject(new MapEditorButton(16,304,32,32,Assets.pathDownLeft_SDK,new TileEditingClicker(handler, 9),false));
+
+
         uiManager.addUIObject(new UIImageButton(80,8,64,32,Assets.button_new,new MapSizingClicker(handler,widthSlider,heightSlider,spawnXSlider,spawnYSlider)));
         uiManager.addUIObject(heightSlider);
         uiManager.addUIObject(widthSlider);
