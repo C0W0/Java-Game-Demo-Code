@@ -15,11 +15,7 @@ public class MenuState extends State {
     public MenuState(Handler handler){
         super(handler);
         uiManager = handler.getUIManager();
-
-        uiManager.addUIObject(new UIImageButton(300, 100, 128, 64, Assets.button_SDK, new StateSwitchingClicker(handler, handler.getGame().sdkState)));
-        uiManager.addUIObject(new UIImageButton(300, 200, 128, 64, Assets.button_start, new StateSwitchingClicker(handler, handler.getGame().gameState)));
-        uiManager.addUIObject(new UIImageButton(300, 300, 128, 64, Assets.button_settings, new StateSwitchingClicker(handler, handler.getGame().settingsState)));
-
+        init();
     }
 
     @Override
@@ -34,6 +30,14 @@ public class MenuState extends State {
 
     @Override
     public void init() {
-
+        uiManager.addUIObject(new UIImageButton((int)((float)800/1024*handler.getWidth()), (int)((float)400/768*handler.getHeight()),
+                (int)((float)128/1024*handler.getWidth()), (int)((float)64/768*handler.getHeight()), Assets.button_SDK,
+                new StateSwitchingClicker(handler, handler.getGame().sdkState,3)));
+        uiManager.addUIObject(new UIImageButton((int)((float)800/1024*handler.getWidth()), (int)((float)500/768*handler.getHeight()),
+                (int)((float)128/1024*handler.getWidth()), (int)((float)64/768*handler.getHeight()), Assets.button_start,
+                new StateSwitchingClicker(handler, handler.getGame().gameState,3)));
+        uiManager.addUIObject(new UIImageButton((int)((float)800/1024*handler.getWidth()), (int)((float)600/768*handler.getHeight()),
+                (int)((float)128/1024*handler.getWidth()), (int)((float)64/768*handler.getHeight()), Assets.button_settings,
+                new StateSwitchingClicker(handler, handler.getGame().settingsState,3)));
     }
 }

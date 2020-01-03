@@ -7,17 +7,19 @@ public class StateSwitchingClicker implements ClickListener {
 
     private Handler handler;
     private State state;
+    private int objects;
 
-    public StateSwitchingClicker(Handler handler, State state){
+    public StateSwitchingClicker(Handler handler, State state, int objects){
         this.handler = handler;
         this.state = state;
+        this.objects = objects;
     }
 
     @Override
     public void onClick() {
         State.setState(state);
         state.init();
-        for(int i = 0; i < 3; i++){
+        for(int i = 0; i < objects; i++){
             handler.getMouseManager().getUiManager().removeUIObject(handler.getMouseManager().getUiManager().getUiObjects().get(0));
         }
     }

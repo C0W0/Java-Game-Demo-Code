@@ -20,9 +20,9 @@ public class Assets {
     public static BufferedImage [] player_down, player_up, player_left, player_right;
     public static BufferedImage [] attack_down, attack_up, attack_left, attack_right;
 
-    public static BufferedImage [] button_start, button_settings;
+    public static BufferedImage [] button_start, button_settings, button_back;
     public static BufferedImage [] button_up, button_down;
-    public static BufferedImage horizontalSlideTrack, horizontalSlider, horizontalTickMark;
+    public static BufferedImage horizontalSlideTrack, horizontalSlider, horizontalTickMark, verticalSlideTrack, verticalSlider, verticalTickMark;
 
     //SDK stuff
     public static BufferedImage [] button_SDK, button_new, button_save;
@@ -48,10 +48,16 @@ public class Assets {
         button_settings = new BufferedImage[2];
         button_settings[0] = sheet1.crop(width*4,0,width*2,height);
         button_settings[1] = sheet1.crop(width*6,0,width*2,height);
+        button_back = new BufferedImage[2];
+        button_back[0] = sheet1.crop(0,height*6,width*2,height);
+        button_back[1] = sheet1.crop(width*2,height*6,width*2,height);
 
         horizontalSlideTrack = sheet1.crop(width*4,height*4,width*2,height);
         horizontalSlider = sheet1.crop(width*6,height*4,width,height);
         horizontalTickMark = sheet1.crop(width*7,height*4,width,height);
+        verticalSlideTrack = sheet1.crop(width*4,height*5,width,height*2);
+        verticalSlider = sheet1.crop(width*5,height*5,width,height);
+        verticalTickMark = sheet1.crop(width*6,height*5,width,height);
 
         button_up = new BufferedImage[2];
         button_up[0] = sheet1.crop(0,height*5,width,height);

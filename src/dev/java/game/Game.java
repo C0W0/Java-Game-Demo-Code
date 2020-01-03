@@ -19,6 +19,7 @@ public class Game implements Runnable{
 
     private BufferStrategy bufferStrategy;
     private Graphics graphics;
+    private int fps;
 
     //input
     private KeyManager keyManager;
@@ -49,10 +50,11 @@ public class Game implements Runnable{
     private boolean running = false;
 
 
-    public Game(String title,int width,int height){
+    public Game(String title,int width,int height,int fps){
         this.width = width;
         this.height = height;
         this.title = title;
+        this.fps = fps;
         keyManager = new KeyManager();
         mouseManager = new MouseManager();
     }
@@ -64,7 +66,7 @@ public class Game implements Runnable{
         display.getFrame().addMouseMotionListener(mouseManager);
         display.getCanvas().addMouseListener(mouseManager);
         display.getCanvas().addMouseMotionListener(mouseManager);
-        timer = new FPSTimer(60);
+        timer = new FPSTimer(fps);
         Assets.init();
 
         handler = new Handler(this);
