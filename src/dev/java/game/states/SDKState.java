@@ -83,7 +83,7 @@ public class SDKState extends State {
 
     @Override
     public void init() {
-        world = new World(handler,"res/worlds/worldSDK.wld");
+        world = new World(handler,"res/worlds/worldSDK");
         handler.setWorld(world);
         heightSlider = new Slider(true,80,32,256,32,100,0,10,"height:");
         widthSlider = new Slider(true,80,96,256,32,100,0,10,"width:");

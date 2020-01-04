@@ -1,6 +1,7 @@
 package dev.java.game.worlds;
 
 import dev.java.game.Handler;
+import dev.java.game.entities.Entity;
 import dev.java.game.entities.EntityManager;
 import dev.java.game.entities.creatures.Player;
 import dev.java.game.entities.statics.Tree;
@@ -23,26 +24,30 @@ public class World {
     //entities
     private EntityManager entityManager;
     private Player player;
+    private Entity[][] worldEntities;
+    private int[] loadedEntities;
 
     //items
     private ItemManager itemManager;
 
     //SDK stuff
-    private File mapFile;
-    private String path;
+    private File mapFile, entityFile;
+    private String mapPath, entityPath;
     private int sdkTileID;
 
     public World(Handler handler, String path){
+        player = new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT);
+        entityManager = new EntityManager(handler, player);
+        mapPath = (path+"/world.wld");
+        entityPath = (path+"/entity.wld");
+        this.handler = handler;
         loadWorld(path);
         //SDK stuff
-        mapFile = new File(path);
-        this.path = path;
+        mapFile = new File(mapPath);
+        entityFile = new File(entityPath);
         sdkTileID = 0;
         //
 
-        player = new Player(handler,spawnX*Tile.TILEWIDTH,spawnY*Tile.TILEHEIGHT);
-        this.handler = handler;
-        entityManager = new EntityManager(handler, player);
         itemManager = new ItemManager(handler);
 
 //        entityManager.addEntity(new Tree(handler, 100, 250));
@@ -51,8 +56,8 @@ public class World {
     }
 
     private void loadWorld(String path){
-        //loading the world file
-        String file = Utils.loadFileAsString(path);
+        //loading the map file
+        String file = Utils.loadFileAsString(mapPath);
         String[] tokens = file.split("\\s+");
         width = Utils.parseInt(tokens[0]);
         height = Utils.parseInt(tokens[1]);
@@ -60,12 +65,39 @@ public class World {
         spawnY = Utils.parseInt(tokens[3]);
 
         worldTiles = new int[width][height];
+        worldEntities = new Entity[width][height];
 
         for(int y = 0; y < height; y++){
             for(int x = 0; x < width; x++){
                 worldTiles[x][y] = Utils.parseInt(tokens[x + y * width + 4]);
             }
         }
+
+        //loading the entity file
+        file = Utils.loadFileAsString(entityPath);
+        String[] entities = file.split("\\s+");
+        loadedEntities = new int[entities.length];
+        for(int i = 0; i < entities.length; i++){
+            loadedEntities[i] = Utils.parseInt(entities[i]);
+        }
+
+
+        for(int y = 0; y < height; y++){
+            for(int x = 0; x < width; x++){
+                if(loadedEntities[x+y*width] == 1)
+                    worldEntities[x][y] = new Tree(handler, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT);
+            }
+        }
+
+        for(int y = 0; y < height; y++){
+            for(int x = 0; x < width; x++){
+                if(worldEntities[x][y] != null){
+                    entityManager.addEntity(worldEntities[x][y]);
+                }
+            }
+        }
+
+//        entityManager.addEntity(new Tree(handler,64,128));
     }
 
     public Tile getTile(int x, int y){
@@ -118,7 +150,7 @@ public class World {
 
     public void resetTile(int tileX, int tileY){
 
-        String[] tokens = Utils.loadFileAsString(path).split("\\s+");
+        String[] tokens = Utils.loadFileAsString(mapPath).split("\\s+");
 
         int[][] savedTiles = new int[width][height];
 
@@ -140,20 +172,38 @@ public class World {
         if(mapFile.exists()){
             mapFile.delete();
         }
+        if(entityFile.exists()){
+            entityFile.delete();
+        }
 
         try {
+            //map
             mapFile.createNewFile();
-            PrintWriter printWriter = new PrintWriter(mapFile);
-            printWriter.println(width+" "+height);
-            printWriter.println(spawnX+" "+spawnY);
+            PrintWriter mapEditor = new PrintWriter(mapFile);
+            mapEditor.println(width+" "+height);
+            mapEditor.println(spawnX+" "+spawnY);
 
             for(int y = 0; y < height; y++){
                 for(int x = 0; x < width; x++){
-                   printWriter.print(worldTiles[x][y]+" ");
+                   mapEditor.print(worldTiles[x][y]+" ");
                 }
-                printWriter.println();
+                mapEditor.println();
             }
-            printWriter.close();
+            mapEditor.close();
+
+            //entity
+            entityFile.createNewFile();
+
+            PrintWriter entityEditor = new PrintWriter(entityFile);
+            for(int y = 0; y < height; y++){
+                for(int x = 0; x < width; x++){
+                    entityEditor.print(loadedEntities[x+y*width]+" ");
+                }
+                entityEditor.println();
+            }
+            entityEditor.close();
+
+
 
         } catch (IOException e){
             e.printStackTrace();
@@ -188,7 +238,7 @@ public class World {
         } catch (IOException e){
             e.printStackTrace();
         }
-        loadWorld(path);
+        loadWorld(mapPath);
         player.setX(spawnX*Tile.TILEWIDTH);
         player.setY(spawnY*Tile.TILEHEIGHT);
     }

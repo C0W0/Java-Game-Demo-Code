@@ -28,7 +28,7 @@ public class GameState extends State {
 
     @Override
     public void init() {
-        world = new World(handler,"res/worlds/world1.wld");
+        world = new World(handler,"res/worlds/world1");
         handler.setWorld(world);
     }
 }
