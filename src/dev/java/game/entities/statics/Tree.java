@@ -17,6 +17,7 @@ public class Tree extends StaticEntity {
         bounds.width = width - 50;
         bounds.height = height - 50;
         health = 2;
+        id = 2;
     }
 
     @Override

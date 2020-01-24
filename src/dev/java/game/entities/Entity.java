@@ -18,6 +18,8 @@ public abstract class Entity {
     protected int width, height; //the size of the entity
     protected Rectangle bounds; //collision detection
 
+    protected int id;
+
     public Entity (Handler handler, float x, float y, int width, int height){
         this.handler = handler;
         this.x = x;
@@ -110,5 +112,9 @@ public abstract class Entity {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public int getId() {
+        return id;
     }
 }

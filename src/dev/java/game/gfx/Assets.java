@@ -11,9 +11,10 @@ public class Assets {
 
     public static Font font28, font20;
 
-    public static BufferedImage grass,grassStone,tree,dirt,dirtStone;
+    public static BufferedImage grass,grassStone,dirt,dirtStone;
     public static BufferedImage pathVertical, pathHorizontal, pathCornerUpRight, pathCornerUpLeft, pathCornerDownLeft, pathCornerDownRight;
 
+    public static BufferedImage invisible, tree;
     public static BufferedImage wood;
 
     public static BufferedImage player_neutral;
@@ -99,9 +100,11 @@ public class Assets {
 
         grass = townTiles.crop(0,height,width,height);
         grassStone = sheet1.crop(width*3,height,width,height);
-        tree = townTiles.crop(width*5,height*3,width,height*2);
         dirt = townTiles.crop(width,height,width,height);
         dirtStone = sheet1.crop(width*6,height,width,height);
+
+        tree = townTiles.crop(width*5,height*3,width,height*2);
+//        invisible = s
 
         pathVertical = townTiles.crop(width*2,height,width,height);
         pathHorizontal = townTiles.crop(width*2,height*2,width,height);

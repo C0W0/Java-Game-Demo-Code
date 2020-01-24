@@ -27,7 +27,11 @@ public class SDKState extends State {
     private void leftClick(int x, int y){
         x = (int)((x+handler.getGameCamera().getxOffset()) / Tile.TILEWIDTH);
         y = (int)((y+handler.getGameCamera().getyOffset()) / Tile.TILEHEIGHT);
-        handler.getWorld().setTile(x, y);
+        if(handler.getWorld().isEntityEditing()){
+            handler.getWorld().setLocationEntity(x, y);
+        } else{
+            handler.getWorld().setTile(x, y);
+        }
     }
 
     private void rightClick(int x, int y){

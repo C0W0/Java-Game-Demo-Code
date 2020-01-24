@@ -2,6 +2,7 @@ package dev.java.game.entities;
 
 import dev.java.game.Handler;
 import dev.java.game.entities.creatures.Player;
+import dev.java.game.tiles.Tile;
 
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -43,6 +44,7 @@ public class EntityManager {
             Entity e = it.next();
             e.update();
             if(!e.isActive()){
+                handler.getWorld().removeLocationEntity((int)(e.getX()/ Tile.TILEWIDTH),(int)(e.getY()/ Tile.TILEHEIGHT));
                 it.remove();
             }
         }

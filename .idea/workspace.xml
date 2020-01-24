@@ -3,15 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/EntityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/world1.wld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK.wld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/worlds/world1.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/world1/world.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK/world.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/entity.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/entity.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/world.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/world.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK/entity.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK/entity.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK/world.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK/world.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/statics/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/TileEditingClicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ui/clicker/TileEditingClicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -137,7 +146,10 @@
       <workItem from="1577934382627" duration="5814000" />
       <workItem from="1577996961823" duration="8002000" />
       <workItem from="1578081832069" duration="10455000" />
-      <workItem from="1578096622177" duration="3191000" />
+      <workItem from="1578096622177" duration="11060000" />
+      <workItem from="1578431663217" duration="184000" />
+      <workItem from="1578673094712" duration="2916000" />
+      <workItem from="1579885191699" duration="2658000" />
     </task>
     <servers />
   </component>
