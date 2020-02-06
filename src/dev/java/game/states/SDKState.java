@@ -4,6 +4,7 @@ import dev.java.game.Handler;
 import dev.java.game.gfx.Assets;
 import dev.java.game.ui.*;
 import dev.java.game.tiles.Tile;
+import dev.java.game.ui.clicker.EntityEditingClicker;
 import dev.java.game.ui.clicker.MapSizingClicker;
 import dev.java.game.ui.clicker.TileEditingClicker;
 import dev.java.game.worlds.World;
@@ -37,7 +38,11 @@ public class SDKState extends State {
     private void rightClick(int x, int y){
         x = (int)((x+handler.getGameCamera().getxOffset()) / Tile.TILEWIDTH);
         y = (int)((y+handler.getGameCamera().getyOffset()) / Tile.TILEHEIGHT);
-        handler.getWorld().resetTile(x, y);
+        if(handler.getWorld().isEntityEditing()){
+            handler.getWorld().removeLocationEntity(x, y);
+        } else {
+            handler.getWorld().resetTile(x, y);
+        }
     }
 
     @Override
@@ -111,7 +116,7 @@ public class SDKState extends State {
         uiManager.addUIObject(new MapEditorButton(16,240,32,32,Assets.pathUpLeft_SDK,new TileEditingClicker(handler, 7),false));
         uiManager.addUIObject(new MapEditorButton(16,272,32,32,Assets.pathDownRight_SDK,new TileEditingClicker(handler, 8),false));
         uiManager.addUIObject(new MapEditorButton(16,304,32,32,Assets.pathDownLeft_SDK,new TileEditingClicker(handler, 9),false));
-
+        uiManager.addUIObject(new MapEditorButton(handler.getWidth()-48, 16, 32, 32,Assets.tree_SDK,new EntityEditingClicker(handler, 2), false));
 
         uiManager.addUIObject(new UIImageButton(80,8,64,32,Assets.button_new,new MapSizingClicker(handler,widthSlider,heightSlider,spawnXSlider,spawnYSlider)));
         uiManager.addUIObject(heightSlider);

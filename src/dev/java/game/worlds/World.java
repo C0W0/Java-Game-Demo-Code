@@ -57,9 +57,6 @@ public class World {
 
         itemManager = new ItemManager(handler);
 
-//        entityManager.addEntity(new Tree(handler, 100, 250));
-//        entityManager.addEntity(new Tree(handler, 200, 250));
-//        entityManager.addEntity(new Tree(handler, 350, 400));
     }
 
     private void loadWorld(String path){
@@ -177,7 +174,11 @@ public class World {
     }
 
     public void setLocationEntity(int entityX, int entityY){
-
+        if(worldEntities[entityX][entityY] != null){
+            if(worldEntities[entityX][entityY].getId() == sdkEntityID){
+                return;
+            }
+        }
         removeLocationEntity(entityX, entityY);
         worldEntities[entityX][entityY] = getEntityWithID(sdkEntityID, entityX, entityY);
         entityManager.getEntities().add(worldEntities[entityX][entityY]);
@@ -189,7 +190,9 @@ public class World {
             if((int)(entityManager.getEntities().get(i).getX() / Tile.TILEWIDTH) == entityX &&
                     (int)(entityManager.getEntities().get(i).getY() / Tile.TILEHEIGHT) == entityY)
             {
-                entityManager.getEntities().get(i).setActive(false);
+                if(entityManager.getEntities().get(i) != player){
+                    entityManager.getEntities().get(i).setActive(false);
+                }
             }
         }
         worldEntities[entityX][entityY] = null;

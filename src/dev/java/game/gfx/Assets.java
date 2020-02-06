@@ -27,7 +27,9 @@ public class Assets {
 
     //SDK stuff
     public static BufferedImage [] button_SDK, button_new, button_save;
-    public static BufferedImage [] grass_SDK, grassStone_SDK, dirt_SDK, dirtStone_SDK, pathV_SDK, pathH_SDK, pathUpRight_SDK, pathUpLeft_SDK, pathDownRight_SDK, pathDownLeft_SDK;
+    public static BufferedImage [] grass_SDK, grassStone_SDK, dirt_SDK, dirtStone_SDK, pathV_SDK, pathH_SDK, pathUpRight_SDK, pathUpLeft_SDK,
+            pathDownRight_SDK, pathDownLeft_SDK;
+    public static BufferedImage [] tree_SDK;
     //
 
     public static BufferedImage inventoryScreen;
@@ -158,6 +160,9 @@ public class Assets {
         pathDownLeft_SDK = new BufferedImage[2];
         pathDownLeft_SDK[0] = pathCornerDownLeft;
         pathDownLeft_SDK[1] = sheet1.crop(width,height*3,width,height);
+        tree_SDK = new BufferedImage[2];
+        tree_SDK[0] = tree;
+        tree_SDK[1] = sheet.crop(width,height*3,width,height);
     }
 
 }
