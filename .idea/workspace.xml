@@ -4,24 +4,22 @@
     <list default="true" id="e9073aab-74ec-4e5b-8450-93276af23bea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/META-INF/Game2D.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/AirWall.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/AirWall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/statics/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/npc/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/entities/creatures/npc/NPC.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/states/SDKState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/EntityEditingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/EntityEditingClicker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/TileEditingClicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/ui/clicker/TileEditingClicker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/worlds/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/SpriteSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/tiles/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/dev/java/game/tiles/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game2D/texture/RemixTownTiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/texture/RemixTownTiles.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/entity.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/entity.wld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/world.wld" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game2D/worlds/worldSDK/world.wld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/texture/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/SpriteSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/texture/RemixTownTiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/texture/RemixTownTiles.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK/entity.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK/entity.wld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/worlds/worldSDK/world.wld" beforeDir="false" afterPath="$PROJECT_DIR$/res/worlds/worldSDK/world.wld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/npc/NPC1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/entities/creatures/npc/NPC1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/gfx/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/states/SDKState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/tiles/Tile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/worlds/World.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,20 +60,35 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\terry\programming\Game2D\res\worlds\worldSDK" />
-      <recent name="G:\terry\programming\Game2D\res\worlds\world1" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="dev.java.game.display" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\terry\programming\Game2D\res\worlds" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.java.game.tiles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\terry\programming\Game2D\res\worlds\worldSDK" />
+      <recent name="G:\terry\programming\Game2D\res\worlds\world1" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="13" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-13.0.2" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="dev.java.game.Launcher" />
       <module name="Game2D" />
@@ -153,6 +166,13 @@
       <workItem from="1580701220101" duration="501000" />
       <workItem from="1580867910066" duration="1935000" />
       <workItem from="1581000973590" duration="2581000" />
+      <workItem from="1581003606113" duration="88000" />
+      <workItem from="1581091746042" duration="31000" />
+      <workItem from="1581349190657" duration="1791000" />
+      <workItem from="1581696358846" duration="229000" />
+      <workItem from="1581881714836" duration="1227000" />
+      <workItem from="1581885547994" duration="1951000" />
+      <workItem from="1581888420176" duration="769000" />
     </task>
     <servers />
   </component>
@@ -193,30 +213,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580868757598" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1581003562569">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1581350984741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581003562569" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1581003562568">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581350984741" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1581350984741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581003562568" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1581003562568">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581350984741" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1581350984741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581003562568" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1581003562569">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581350984741" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1581350984741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581003562569" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581350984741" />
     <state x="270" y="55" key="SettingsEditor" timestamp="1580698924511">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580698924511" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581000976311">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581003634867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581000976311" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581003634867" />
     <state x="178" y="23" key="new project wizard" timestamp="1580868772055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

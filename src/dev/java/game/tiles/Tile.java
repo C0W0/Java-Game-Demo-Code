@@ -1,5 +1,7 @@
 package dev.java.game.tiles;
 
+import dev.java.game.gfx.Animation;
+
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
@@ -18,6 +20,7 @@ public abstract class Tile {
     public static Tile pathUpLeft = new PathUpLeft(7);
     public static Tile pathDownRight = new PathDownRight(8);
     public static Tile pathDownLeft = new PathDownLeft(9);
+    public static Tile waterTile = new WaterTile(10);
 
 
 
@@ -28,6 +31,7 @@ public abstract class Tile {
 
     //tiles
     protected BufferedImage texture;
+    protected Animation dynamicTexture;
     protected final int id;
 
     public Tile(BufferedImage texture, int id){
@@ -37,10 +41,20 @@ public abstract class Tile {
         tiles[id] = this;
     }
 
+    public Tile(Animation dynamicTexture, int id){
+        this.dynamicTexture = dynamicTexture;
+        this.id = id;
+
+        tiles[id] = this;
+    }
+
 
     //tick and render
     public void update(){
-
+        if(dynamicTexture != null){
+            dynamicTexture.update();
+            texture = dynamicTexture.getCurrentFrame();
+        }
     }
 
     public void render(Graphics graphics, int x, int y){

@@ -22,6 +22,11 @@ public class World {
     private int spawnX, spawnY;
     private int [][] worldTiles;//a 2d array which associates the type of tiles to the location (x,y)
 
+    private int xStart;
+    private int xEnd;
+    private int yStart;
+    private int yEnd;
+
     //entities
     private EntityManager entityManager;
     private Player player;
@@ -139,17 +144,23 @@ public class World {
 
     public void update(){
 
+        xStart = (int) Math.max(0,handler.getGameCamera().getxOffset() / Tile.TILEWIDTH);
+        xEnd = (int) Math.min(width,(handler.getGameCamera().getxOffset() + handler.getWidth()) / Tile.TILEWIDTH + 1);
+        yStart = (int) Math.max(0,handler.getGameCamera().getyOffset() / Tile.TILEHEIGHT);
+        yEnd = (int) Math.min(height,(handler.getGameCamera().getyOffset() + handler.getHeight()) / Tile.TILEHEIGHT + 1);
+
+        for(int y = yStart; y < yEnd; y++){
+            for(int x = xStart; x < xEnd; x++){
+                getTile(x,y).update();
+            }
+        }
+
         entityManager.update();
         itemManager.update();
 
     }
 
     public void render(Graphics graphics){
-
-        int xStart = (int) Math.max(0,handler.getGameCamera().getxOffset() / Tile.TILEWIDTH);
-        int xEnd = (int) Math.min(width,(handler.getGameCamera().getxOffset() + handler.getWidth()) / Tile.TILEWIDTH + 1);
-        int yStart = (int) Math.max(0,handler.getGameCamera().getyOffset() / Tile.TILEHEIGHT);
-        int yEnd = (int) Math.min(height,(handler.getGameCamera().getyOffset() + handler.getHeight()) / Tile.TILEHEIGHT + 1);
 
         for(int y = yStart; y < yEnd; y++){
             for(int x = xStart; x < xEnd; x++){

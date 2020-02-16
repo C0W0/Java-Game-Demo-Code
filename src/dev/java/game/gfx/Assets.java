@@ -13,6 +13,7 @@ public class Assets {
 
     public static BufferedImage grass,grassStone,dirt,dirtStone;
     public static BufferedImage pathVertical, pathHorizontal, pathCornerUpRight, pathCornerUpLeft, pathCornerDownLeft, pathCornerDownRight;
+    public static BufferedImage [] water;
 
     public static BufferedImage invisible, tree;
     public static BufferedImage wood;
@@ -114,6 +115,12 @@ public class Assets {
         pathCornerUpLeft = townTiles.crop(width,height*3,width,height);
         pathCornerDownLeft = townTiles.crop(0,height*3,width,height);
         pathCornerDownRight = townTiles.crop(width*2,height*3,width,height);
+
+        water = new BufferedImage[4];
+        water[0] = townTiles.crop(0,height*4,width,height);
+        water[1] = townTiles.crop(width,height*4,width,height);
+        water[2] = townTiles.crop(width*2,height*4,width,height);
+        water[3] = townTiles.crop(width*3,height*4,width,height);
 
         wood = sheet1.crop(width*7,height,width,height);
 
